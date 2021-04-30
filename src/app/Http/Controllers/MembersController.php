@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Humor;
+use App\Humor;
 
 class MembersController extends Controller
 {
