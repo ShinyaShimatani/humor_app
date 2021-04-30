@@ -40,7 +40,7 @@
              pointHoverBorderColor: 'rgb(255, 99, 132)'
             }, {
              label: 'Penny',
-             data: [50, 78, 10, 89, 30, 85, 60, 10],
+             data: [50, 78, 10, 89, 30, 85, 60, 90],
              fill: true,
              backgroundColor: 'rgba(54, 162, 235, 0.2)',
              borderColor: 'rgb(54, 162, 235)',
