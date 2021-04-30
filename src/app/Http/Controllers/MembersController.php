@@ -8,8 +8,8 @@ use App\Humor;
 class MembersController extends Controller
 {
     public function show(Request $request){
-        $member = Humor::get();
+        $members = Humor::get();
     
-        return view('humor_chart', ['member' => $member]);
+        return view('humor_chart', ['member' => $members]);
     }
 }
