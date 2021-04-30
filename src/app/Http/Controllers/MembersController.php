@@ -15,7 +15,7 @@ class MembersController extends Controller
         echo "データベースに接続できません";
         }*/
         $pdo = DB::connection()->getPdo();
-        $sql="SELECT id, name, mimic, maso, pathos, updown, black, volume, energy, insane, FROM members ORDER BY id";
+        $sql= "SELECT id, name, mimic, maso, pathos, updown, black, volume, energy, insane, color FROM members ORDER BY id";
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
         $data= "";
