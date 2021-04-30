@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Humor;
 
+use Illuminate\Support\Facades\DB;
+
 class MembersController extends Controller
 {
     public function show(){
@@ -12,7 +14,7 @@ class MembersController extends Controller
         if(!$connect){
         echo "データベースに接続できません";
         }*/
-        $pdo = Humor::connection('members')->getPdo();
+        $pdo = DB::connection('members')->getPdo();
         $sql="SELECT id, name, mimic, maso, pathos, updown, black, volume, energy, insane, FROM members ORDER BY id";
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
