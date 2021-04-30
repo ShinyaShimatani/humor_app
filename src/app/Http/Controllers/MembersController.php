@@ -8,7 +8,7 @@ use App\Models\Humor;
 class MembersController extends Controller
 {
     public function show(Request $request){
-    $members = DB::table('members');
+    $members = Humor::get();
 
     // Generate random colours for the groups
     for ($i=0; $i<=count(members); $i++) {
