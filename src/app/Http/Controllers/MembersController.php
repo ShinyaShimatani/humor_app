@@ -19,7 +19,7 @@ class MembersController extends Controller
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
         $data= "";
-        while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+        while($row = $stmt->fetchAll()){
         $data.= "{";
         $data.= " label: '".$row["name"]."',";
         $data.= " data: [".$row["mimic"].", ".$row["maso"].", ".$row["mimic"].", ".$row["pathos"].", ";
