@@ -11,7 +11,7 @@ class MembersController extends Controller
     $members = Humor::get();
 
     // Generate random colours for the groups
-    for ($i=0; $i<=count(members); $i++) {
+    for ($i=0; $i<=count($members); $i++) {
            $colours[] = '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6);
           }
 
