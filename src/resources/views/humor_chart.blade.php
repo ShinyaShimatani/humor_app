@@ -53,7 +53,7 @@
              data: [28, 48, 40, 19, 96, 27, 100, 50],
              fill: true,
              backgroundColor: 'rgba(70, 70, 70, 0.3)',
-             borderColor: 'rgb(54, 162, 235)',
+             borderColor: 'rgb(90, 102, 555)',
              pointBackgroundColor: 'rgb(54, 162, 235)',
              pointBorderColor: '#fff',
              pointHoverBackgroundColor: '#fff',
