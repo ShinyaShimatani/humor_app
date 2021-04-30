@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Humor extends Model
 {
     use HasFactory;
-    
-    protected $table = 'members';
+
+    protected $table = 'subscribers';
     protected $fillable = ['name','mimic','maso','pathos','updown','black','volume','energy','insane','color'];
 
 }

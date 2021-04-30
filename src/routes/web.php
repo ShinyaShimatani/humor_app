@@ -15,4 +15,4 @@ use App\Models\Humor;
 */
 
 //top page//
-Route::get('/', 'App\Http\Controllers\MembersController@show')->name('show_chart');
+Route::get('/', 'App\Http\Controllers\SubscribersController@show')->name('show_chart');
