@@ -30,7 +30,7 @@
 			labels: labels,
 			datasets: [{
              label: 'Sheldon',
-             data: [65, 59, 90, 81, 56, 55, 40],
+             data: [65, 59, 90, 81, 56, 55, 40, 100],
              fill: true,
              backgroundColor: 'rgba(255, 99, 132, 0.2)',
              borderColor: 'rgb(255, 99, 132)',
@@ -40,7 +40,7 @@
              pointHoverBorderColor: 'rgb(255, 99, 132)'
             }, {
              label: 'Penny',
-             data: [28, 48, 40, 19, 96, 27, 100],
+             data: [50, 78, 10, 89, 30, 85, 60, 10],
              fill: true,
              backgroundColor: 'rgba(54, 162, 235, 0.2)',
              borderColor: 'rgb(54, 162, 235)',
@@ -50,7 +50,7 @@
              pointHoverBorderColor: 'rgb(54, 162, 235)'
             }, {
              label: 'Mike',
-             data: [28, 48, 40, 19, 96, 27, 100],
+             data: [28, 48, 40, 19, 96, 27, 100, 50],
              fill: true,
              backgroundColor: 'rgba(70, 70, 70, 0.3)',
              borderColor: 'rgb(54, 162, 235)',
