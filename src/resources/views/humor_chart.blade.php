@@ -2,10 +2,10 @@
 <html lang="ja">
 <head>
  <meta charset="utf-8">
- <title>グラフ</title> 
+ <title>ユーモアグラフ</title> 
 </head>
  <body>
-		<h1>グラフ</h1>
+		<h1>ユーモアグラフ</h1>
    	<canvas id="myChart"></canvas>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 	<!-- グラフを描画 -->
@@ -19,32 +19,32 @@
 		"Raj",
 		"Bernadette",
 	];
-	//平均ユーモアログ
-	var average_weight_log = [
-		50.0,	//1月のデータ
-		51.0,	//2月のデータ
-		52.0,	//3月のデータ
-		53.0,	//4月のデータ
-		54.0,	//5月のデータ
-		49.0	//6月のデータ
+	//声量ユーモアログ
+	var volume_humor_log = [
+		100.0,	//例:Pennyのデータ
+		51.0,	//例:Sheldonのデータ
+		52.0,	//例:Emilyのデータ
+		53.0,	//例:Renardのデータ
+		54.0,	//例:Rajのデータ
+		49.0	//例:Bernadetteのデータ
 	];
-	//最大ユーモアログ
-	var max_weight_log = [
-		52.0,	//1月のデータ
-		54.0,	//2月のデータ
-		55.0,	//3月のデータ
-		51.0,	//4月のデータ
-		57.0,	//5月のデータ
-		48.0	//6月のデータ
+	//緩急ユーモアログ
+	var updown_humor_log = [
+		52.0,	
+		100.0,	
+		55.0,	
+		51.0,	
+		57.0,	
+		48.0	
 	];
-	//最小体重ログ
-	var min_weight_log = [
-		48.0,	//1月のデータ
-		47.0,	//2月のデータ
-		45.0,	//3月のデータ
-		44.0,	//4月のデータ
-		43.0,	//5月のデータ
-		49.0	//6月のデータ
+	//狂気さ ユーモアログ
+	var insane_humor_log = [
+		100.0,	
+		47.0,	
+		45.0,	
+		44.0,	
+		43.0,	
+		49.0	
 	];
 
 	//グラフを描画
@@ -55,20 +55,20 @@
 			labels: labels,
 			datasets: [
 				{
-					label: '平均体重',
-					data: average_weight_log,
+					label: '声量',
+					data: volume_humor_log,
 					borderColor: "rgba(0,0,255,1)",
          			backgroundColor: "rgba(0,0,0,0)"
 				},
 				{
-					label: '最大',
-					data: max_weight_log,
+					label: '緩急',
+					data: updown_humor_log,
 					borderColor: "rgba(0,255,0,1)",
          			backgroundColor: "rgba(0,0,0,0)"
 				},
 				{
-					label: '最小',
-					data: min_weight_log,
+					label: '狂気さ',
+					data: insane_humor_log,
 					borderColor: "rgba(255,0,0,1)",
          			backgroundColor: "rgba(0,0,0,0)"
 				}
