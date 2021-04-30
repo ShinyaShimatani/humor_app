@@ -16,10 +16,9 @@ class MembersController extends Controller
           }
 
     // Prepare the data for returning with the view
-    $Members = new Members;
-      $members->labels = (array_keys($members));
-      $members->dataset = (array_values($members));
-      $members->colours = $colours;
+      $chart->labels = (array_keys($members));
+      $chart->dataset = (array_values($members));
+      $chart->colours = $colours;
     return view('humor_chart', compact('chart'));
     }
 }
