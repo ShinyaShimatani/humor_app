@@ -21,7 +21,7 @@ class MembersController extends Controller
         $data= "";
         while($row = $stmt->fetchAll()){
         $data.= "{";
-        $data.= " label: '".$row["name"]."',";
+        $data.= " label: '".$row['name']."',";
         $data.= " data: [".$row["mimic"].", ".$row["maso"].", ".$row["mimic"].", ".$row["pathos"].", ";
         $data.= $row["updown"].", ".$row["black"].", ".$row["volume"].", ".$row["energy"].", ".$row["insane"]."],";
         $data.= " backgroundColor: 'rgba(".$row["color"].",0.4)',";
