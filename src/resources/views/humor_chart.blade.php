@@ -50,7 +50,7 @@
 	//グラフを描画
    var ctx = document.getElementById("myChart");
    var myChart = new Chart(ctx, {
-		type: 'line',
+		type: 'radar',
 		data : {
 			labels: labels,
 			datasets: [
