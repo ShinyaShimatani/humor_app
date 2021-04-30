@@ -9,7 +9,7 @@ class Humor extends Model
 {
     use HasFactory;
     
-    rotected $table = 'members';
+    protected $table = 'members';
     protected $fillable = ['name','mimic','maso','pathos','updown','black','volume','energy','insane','color'];
 
 }
