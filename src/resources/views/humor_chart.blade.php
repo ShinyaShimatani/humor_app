@@ -27,10 +27,10 @@
    var myChart = new Chart(ctx, {
 		type: 'radar',
 		data : {
-			labels: {!!json_encode($chart->labels)!!},
+			labels: {!!json_encode($member->labels)!!},
 			datasets: [{
              label: {{ $members->id }},
-             data: {!! json_encode($chart->dataset)!!},
+             data: {!! json_encode($member>dataset)!!},
              fill: true,
              backgroundColor: {!! json_encode($chart->colours)!!},
              borderColor: 'rgb(255, 99, 132)',
