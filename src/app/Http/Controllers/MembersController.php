@@ -7,18 +7,27 @@ use App\Models\Humor;
 
 class MembersController extends Controller
 {
-    public function show(Request $request){
-    $members = Humor::get();
+    public function show(){
+        /*$connect = new PDO("mysql:host=localhost;dbname=test;charset=utf8;", 'root', 'password' );
+        if(!$connect){
+        echo "データベースに接続できません";
+        }*/
+        $pdo = DB::connection('members')->getPdo();
+        $sql="SELECT id, name, mimic, maso, pathos, updown, black, volume, energy, insane, FROM members ORDER BY id";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $data= "";
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+        $data.= "{";
+        $data.= " label: '".$row["name"]."',";
+        $data.= " data: [".$row["mimic"].", ".$row["maso"].", ".$row["mimic"].", ".$row["pathos"].", ";
+        $data.= $row["updown"].", ".$row["black"].", ".$row["volume"].", ".$row["energy"].", ".$row["insane"]."],";
+        $data.= " backgroundColor: 'rgba(".$row["color"].",0.4)',";
+        $data.= " borderColor: 'rgba(123, 255, 0, 1)',";
+        $data.= " borderWidth: 1";
+        $data.= "},";
+        }
 
-    // Generate random colours for the groups
-    for ($i=0; $i<=count($members); $i++) {
-           $colours[] = '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6);
-          }
-
-    // Prepare the data for returning with the view
-      $chart->labels = (array_keys($members));
-      $chart->dataset = (array_values($members));
-      $chart->colours = $colours;
-    return view('humor_chart', compact('chart'));
+        return view('humor_chart',$member);
     }
 }
