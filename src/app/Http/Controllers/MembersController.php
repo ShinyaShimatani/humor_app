@@ -12,7 +12,7 @@ class MembersController extends Controller
         if(!$connect){
         echo "データベースに接続できません";
         }*/
-        $pdo = DB::connection('members')->getPdo();
+        $pdo = Humor::connection('members')->getPdo();
         $sql="SELECT id, name, mimic, maso, pathos, updown, black, volume, energy, insane, FROM members ORDER BY id";
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
