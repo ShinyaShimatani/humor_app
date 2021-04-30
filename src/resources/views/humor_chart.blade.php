@@ -23,7 +23,7 @@ h1{font-size:1.3rem;}
 <h1 class="text-primary my-3">人のユーモア要素を細分化し、"自分の面白い"人に遭遇しよう </h1>
 <div class="row">
 <div class="col-md-5">
-<div class="text-sm">※数値100が各ユーモア要素の数値を表しています。</div>
+<div class="text-sm">※数値(max100)が各ユーモア要素の数値を表しています。</div>
 <div class="text-sm">※ユーモア要素は独断と偏見であり、適宜変更されます<BR>ご容赦ください。</div>
 </div>
 <div class="col-md-7">
