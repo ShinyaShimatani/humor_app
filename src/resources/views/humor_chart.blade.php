@@ -12,39 +12,14 @@
    <script>
 	//ラベル
 	var labels = [
-		"Penny",
-		"Sheldon",
-		"Emily",
-		"Renard",
-		"Raj",
-		"Bernadette",
-	];
-	//声量ユーモアログ
-	var volume_humor_log = [
-		100.0,	//例:Pennyのデータ
-		51.0,	//例:Sheldonのデータ
-		52.0,	//例:Emilyのデータ
-		53.0,	//例:Renardのデータ
-		54.0,	//例:Rajのデータ
-		49.0	//例:Bernadetteのデータ
-	];
-	//緩急ユーモアログ
-	var updown_humor_log = [
-		52.0,	
-		100.0,	
-		55.0,	
-		51.0,	
-		57.0,	
-		48.0	
-	];
-	//狂気さ ユーモアログ
-	var insane_humor_log = [
-		100.0,	
-		47.0,	
-		45.0,	
-		44.0,	
-		43.0,	
-		49.0	
+		"mimic",
+		"maso",
+		"pathos",
+		"updown",
+		"black",
+		"volume",
+        "energy",
+        "insane",
 	];
 
 	//グラフを描画
@@ -53,31 +28,42 @@
 		type: 'radar',
 		data : {
 			labels: labels,
-			datasets: [
-				{
-					label: '声量',
-					data: volume_humor_log,
-					borderColor: "rgba(0,0,255,1)",
-         			backgroundColor: "rgba(0,0,0,0)"
-				},
-				{
-					label: '緩急',
-					data: updown_humor_log,
-					borderColor: "rgba(0,255,0,1)",
-         			backgroundColor: "rgba(0,0,0,0)"
-				},
-				{
-					label: '狂気さ',
-					data: insane_humor_log,
-					borderColor: "rgba(255,0,0,1)",
-         			backgroundColor: "rgba(0,0,0,0)"
-				}
-			]
+			datasets: [{
+             label: 'Sheldon',
+             data: [65, 59, 90, 81, 56, 55, 40],
+             fill: true,
+             backgroundColor: 'rgba(255, 99, 132, 0.2)',
+             borderColor: 'rgb(255, 99, 132)',
+             pointBackgroundColor: 'rgb(255, 99, 132)',
+             pointBorderColor: '#fff',
+             pointHoverBackgroundColor: '#fff',
+             pointHoverBorderColor: 'rgb(255, 99, 132)'
+            }, {
+             label: 'Penny',
+             data: [28, 48, 40, 19, 96, 27, 100],
+             fill: true,
+             backgroundColor: 'rgba(54, 162, 235, 0.2)',
+             borderColor: 'rgb(54, 162, 235)',
+             pointBackgroundColor: 'rgb(54, 162, 235)',
+             pointBorderColor: '#fff',
+             pointHoverBackgroundColor: '#fff',
+             pointHoverBorderColor: 'rgb(54, 162, 235)'
+            }, {
+             label: 'Mike',
+             data: [28, 48, 40, 19, 96, 27, 100],
+             fill: true,
+             backgroundColor: 'rgba(70, 70, 70, 0.3)',
+             borderColor: 'rgb(54, 162, 235)',
+             pointBackgroundColor: 'rgb(54, 162, 235)',
+             pointBorderColor: '#fff',
+             pointHoverBackgroundColor: '#fff',
+             pointHoverBorderColor: 'rgb(54, 162, 235)'
+            }]
 		},
 		options: {
 			title: {
 				display: true,
-				text: 'ユーモアログ（６ヶ月平均）'
+				text: 'ユーモアchart'
 			}
 		}
    });
