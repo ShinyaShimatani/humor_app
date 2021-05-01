@@ -19,15 +19,20 @@ class MembersController extends Controller
     public function search(Request $request)
     {
         $mimic = $request->input('mimic');
+        $maso = $request->input('maso');
  
         $query = Humor::query();
  
         if (!empty($mimic)) {
             $query->where('mimic', '>=', $mimic);
         }
+
+        if (!empty($maso)) {
+            $query->where('maso', '>=', $maso);
+        }
  
         $members = $query->get();
  
-        return view('index', compact('members', 'mimic'));
+        return view('index', compact('members', 'mimic', 'maso'));
     }
 }
