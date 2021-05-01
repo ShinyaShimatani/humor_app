@@ -19,7 +19,7 @@
      <p2>　　声量　: <input type="number" name="volume" value="volume" style="width:80px;"> </p2><br>
      <p2>　　熱量　: <input type="number" name="energy" value="energy" style="width:80px;"> </p2>
      <p2>　　狂気　: <input type="number" name="insane" value="insane" style="width:80px;"> </p2><br>
-     　　　　　　　　　　　　　　<p2><input type="submit" value="検索"></p2>
+     <p3><input type="submit" value="検索"></p3>
  </form>
  <a href="{{ route('index') }}">検索解除</a>
  </div>
