@@ -45,7 +45,7 @@
     @foreach($members as $member)
         <tr>
             <td>{{$member->id}}</td>
-            <a href="{{ route('original') }}">{{$member->name}}</a>
+            <td href="{{ route('original') }}">{{$member->name}}</td>
             <td>{{$member->mimic}}</td>
             <td>{{$member->maso}}</td>
             <td>{{$member->pathos}}</td>
