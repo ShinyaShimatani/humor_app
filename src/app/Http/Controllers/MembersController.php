@@ -62,7 +62,7 @@ class MembersController extends Controller
 
     public function detail(){
 
-        $members = Humor::orderBy('id','asc')->get();
+        $members = Humor::find($request->id);
         return view('detail',['members' => $members]);
 
     }
