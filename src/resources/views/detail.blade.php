@@ -7,7 +7,6 @@
     <!-- table -->
     <table class="table table-striped">
 
-        <!-- <th>id</th> -->
         <th>名前</th>
         <th>モノマネ</th>
         <th>自虐</th>
@@ -25,7 +24,6 @@
     <!-- loop -->
     @foreach($members as $member)
         <tr>
-            <!-- <td>{{$member->id}}</td> -->
             <td>{{$member->name}}</td>
             <td>{{$member->mimic}}</td>
             <td>{{$member->maso}}</td>
