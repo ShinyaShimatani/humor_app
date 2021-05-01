@@ -20,19 +20,43 @@ class MembersController extends Controller
     {
         $mimic = $request->input('mimic');
         $maso = $request->input('maso');
+        $pathos = $request->input('pathos');
+        $updown = $request->input('updown');
+        $black_joking = $request->input('black_joking');
+        $volume = $request->input('volume');
+        $energy = $request->input('energy');
+        $insane = $request->input('insane');
  
         $query = Humor::query();
  
         if (!empty($mimic)) {
             $query->where('mimic', '>=', $mimic);
         }
-
         if (!empty($maso)) {
             $query->where('maso', '>=', $maso);
+        }
+        if (!empty($pathos)) {
+            $query->where('pathos', '>=', $pathos);
+        }
+        if (!empty($updown)) {
+            $query->where('updown', '>=', $updown);
+        }
+        if (!empty($black_joking)) {
+            $query->where('black_joking', '>=', $black_joking);
+        }
+        if (!empty($volume)) {
+            $query->where('volume', '>=', $volume);
+        }
+        if (!empty($energy)) {
+            $query->where('energy', '>=', $energy);
+        }
+        if (!empty($insane)) {
+            $query->where('insane', '>=', $insane);
         }
  
         $members = $query->get();
  
-        return view('index', compact('members', 'mimic', 'maso'));
+        return view('index', 
+        compact('members', 'mimic', 'maso', 'pathos', 'updown', 'black_joking', 'volume', 'energy', 'insane'));
     }
 }
