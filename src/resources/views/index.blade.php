@@ -9,10 +9,10 @@
  </p>
 
  <div class="form-group, text-left" > 
- <p1><AND検索></p1>
+ <p1><strong>AND検索</strong></p1>
  <form action="{{url('/search')}}" method="get" class="text-left">
-     <p2>モノマネ: <input type="number" name="mimic" value="mimic" size="5" maxlength="3"> 以上</p2>
-     <p2>自虐: <input type="number" name="maso" value="maso" size="5" maxlength="3"> 以上</p2>
+     <p2>モノマネ: <input type="number" name="mimic" value="mimic" size="5" maxlength="3"> 以上</p2><br>
+     <p2>自虐: <input type="number" name="maso" value="maso" size="5" maxlength="3"> 以上</p2><br>
      <p2><input type="submit" value="検索"></p2>
  </form>
  </div>
