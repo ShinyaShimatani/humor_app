@@ -10,7 +10,7 @@
 
  <p1>検索</p1>
  <form action="{{url('/search')}}" method="get">
-     <p2><input type="number" name="mimic" value="mimic">以上</p2>
+     <p2>モノマネ:<input type="number" name="mimic" value="mimic">以上</p2>
      <p3><input type="submit" value="検索"></p3>
  </form>
 
