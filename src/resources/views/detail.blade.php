@@ -25,7 +25,7 @@
     <!-- loop -->
     @foreach($members as $member)
         <tr>
-            <td>{{$member->id}}</td>
+            <td>{{$request->id}}</td>
             <td>{{$member->name}}</td>
             <td>{{$member->mimic}}</td>
             <td>{{$member->maso}}</td>
