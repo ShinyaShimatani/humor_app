@@ -15,6 +15,7 @@
      <p2>自虐: <input type="number" name="maso" value="maso" size="5" maxlength="3"> 以上</p2><br>
      <p2><input type="submit" value="検索"></p2>
  </form>
+ <a href="{{ route('index') }}">検索解除</a>
  </div>
 
  @if($members->count())
