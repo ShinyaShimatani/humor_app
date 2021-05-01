@@ -12,11 +12,10 @@ class MembersController extends Controller
     public function index(){
         $members = Humor::orderBy('id','asc')->get();
         return view('index',['members' => $members]);
-
     }
 
-    public function detail(Request $request){
-        $members = Humor::find($request->id);
+    public function detail(){
+        $members = Humor::orderBy('id','asc')->get();
         return view('detail',['members' => $members]);
     }
 
