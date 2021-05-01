@@ -27,7 +27,7 @@
             <td>{{$member->maso}}</td>
             <td>{{$member->pathos}}</td>
             <td>{{$member->updown}}</td>
-            <td>{{$member->black-joking}}</td>
+            <td>{{$member->black_joking}}</td>
             <td>{{$member->volume}}</td>
             <td>{{$member->energy}}</td>
             <td>{{$member->insane}}</td>
