@@ -40,7 +40,7 @@
         <th>声量</th>
         <th>熱量</th>
         <th>狂気</th>
-        <th>◎遭遇してみる◎</th>
+        <th>=詳しく見てみる=</th>
 
     <!-- loop -->
     @foreach($members as $member)
@@ -55,7 +55,7 @@
             <td>{{$member->volume}}</td>
             <td>{{$member->energy}}</td>
             <td>{{$member->insane}}</td>
-            <td><a href="{{ route('index') }}">●</a> ;
+            <td><a href="{{ route('index') }}"></a> ;
 
         </tr>
     @endforeach
