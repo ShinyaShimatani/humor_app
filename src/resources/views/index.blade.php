@@ -8,11 +8,13 @@
     登録ユーザーのユーモア要素(勝手に代表8項目)を可視化することで、自分好みの面白い人を発見でき、繋がれるwebサイトです。<br>
  </p>
 
- <p1 class="text-left">検索</p1>
+ <div class="form-group, text-left" > 
+ <p1><<検索>></p1>
  <form action="{{url('/search')}}" method="get" class="text-left">
      <p2>モノマネ: <input type="number" name="mimic" value="mimic"> 以上</p2>
-     <p3><input type="submit" value="検索"></p3>
+     <p2><input type="submit" value="検索"></p2>
  </form>
+ </div>
 
  @if($members->count())
 
