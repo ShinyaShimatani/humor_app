@@ -42,6 +42,7 @@
         </tr>
     @endforeach
     </table>
-    <a href="{{ route('index') }}"></a> 
+    
+    <a href="{{ route('index') }}">一覧に戻る</a> 
 
 @endsection
