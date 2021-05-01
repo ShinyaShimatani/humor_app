@@ -60,8 +60,7 @@ class MembersController extends Controller
         compact('members', 'mimic', 'maso', 'pathos', 'updown', 'black_joking', 'volume', 'energy', 'insane'));
     }
 
-    public function detail(){
-
+    public function detail(Request $request){
         $members = Humor::find($request->id);
         return view('detail',['members' => $members]);
 
