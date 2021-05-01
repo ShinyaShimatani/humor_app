@@ -19,7 +19,7 @@ class MembersController extends Controller
         $id = $request->input('id');
 
         $member = Humor::find($request->id);
-        return view('detail',['member' => $member]);
+        return view('detail',['members' => $members]);
     }
 
     public function search(Request $request)
