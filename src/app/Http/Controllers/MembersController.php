@@ -14,9 +14,12 @@ class MembersController extends Controller
         return view('index',['members' => $members]);
     }
 
-    public function detail(){
-        $members = Humor::orderBy('id','asc')->get();
-        return view('detail',['members' => $members]);
+    public function detail(Request $request){
+
+        $id = $request->input('id');
+
+        $member = Humor::find($request->id);
+        return view('detail',['member' => $member]);
     }
 
     public function search(Request $request)
