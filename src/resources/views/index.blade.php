@@ -9,9 +9,9 @@
  </p>
 
  <div class="form-group, text-left" > 
- <p1><<検索>></p1>
+ <p1><検索></p1>
  <form action="{{url('/search')}}" method="get" class="text-left">
-     <p2>モノマネ: <input type="number" name="mimic" value="mimic"> 以上</p2>
+     <p2>モノマネ: <input type="number" name="mimic" value="mimic" class="size-input-zip3"> 以上</p2>
      <p2><input type="submit" value="検索"></p2>
  </form>
  </div>
