@@ -55,14 +55,14 @@
             <td>{{$member->volume}}</td>
             <td>{{$member->energy}}</td>
             <td>{{$member->insane}}</td>
-            <td><a href="{{ route('index') }}">★</a> ;
+            <td><a href="{{route('detail',['id'=>$member->id])}}">★</a> ;
 
         </tr>
     @endforeach
     </table>
 
  @else
- <p>そこまで面白い登録者はいませんでした</p>
+ <p>!!そこまで面白い登録者はいませんでした....!!</p>
  @endif
 
 @endsection
