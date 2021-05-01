@@ -20,7 +20,7 @@ class CreateMembersTable extends Migration
             $table->integer('maso');
             $table->integer('pathos');
             $table->integer('updown');
-            $table->integer('black');
+            $table->integer('black-joking');
             $table->integer('volume');
             $table->integer('energy');
             $table->integer('insane');
