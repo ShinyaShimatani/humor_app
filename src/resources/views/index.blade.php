@@ -10,7 +10,7 @@
 
  
  <div class="form-group, text-left"> 
-   <p1><strong>AND検索(入力値"以上")</strong></p1>
+   <p1><strong><AND検索(入力値"以上")></strong></p1>
    <form action="{{url('/search')}}" method="get" class="text-left">
      <p2>　　ﾓﾉﾏﾈ　: <input type="number" name="mimic" value="mimic" style="width:80px;"> </p2>
      <p2>　　自虐　: <input type="number" name="maso" value="maso" style="width:80px;" > </p2><br>
