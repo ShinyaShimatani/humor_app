@@ -59,4 +59,11 @@ class MembersController extends Controller
         return view('index', 
         compact('members', 'mimic', 'maso', 'pathos', 'updown', 'black_joking', 'volume', 'energy', 'insane'));
     }
+
+    public function original(){
+
+        $members = Humor::orderBy('id','asc')->get();
+        return view('index',['members' => $members]);
+
+    }
 }
