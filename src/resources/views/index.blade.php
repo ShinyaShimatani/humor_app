@@ -8,9 +8,10 @@
     登録ユーザーのユーモア要素(勝手に代表8項目)を可視化することで、自分好みの面白い人を発見でき、繋がれるwebサイトです。<br>
  </p>
 
- <div class="list js-list-content, form-group, text-left"> 
- <p1><strong>AND検索(入力値"以上")</strong></p1>
- <form action="{{url('/search')}}" method="get" class="text-left">
+ <div class="js-list list-wrapper">
+  <div class="list js-list-content, form-group, text-left"> 
+   <p1><strong>AND検索(入力値"以上")</strong></p1>
+   <form action="{{url('/search')}}" method="get" class="text-left">
      <p2>　　ﾓﾉﾏﾈ　: <input type="number" name="mimic" value="mimic" style="width:80px;"> </p2>
      <p2>　　自虐　: <input type="number" name="maso" value="maso" style="width:80px;"> </p2><br>
      <p2>　　哀愁　: <input type="number" name="pathos" value="pathos" style="width:80px;"> </p2>
@@ -20,8 +21,9 @@
      <p2>　　熱量　: <input type="number" name="energy" value="energy" style="width:80px;"> </p2>
      <p2>　　狂気　: <input type="number" name="insane" value="insane" style="width:80px;"> </p2><br>
      <p3><input type="submit" value="検索"></p3>
- </form>
- <a href="{{ route('index') }}">検索解除</a>
+   </form>
+   <a href="{{ route('index') }}">検索解除</a>
+  </div>
  </div>
 
  @if($members->count())
