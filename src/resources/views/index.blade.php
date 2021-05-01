@@ -9,7 +9,7 @@
  </p>
 
  <p1>検索</p1>
- <form action="{{url('/narrowing_index')}}" method="get">
+ <form action="{{url('/search')}}" method="get">
      <p2><input type="number" name="mimic" value="{{$mimic}}">以上</p2>
      <p3><input type="submit" value="検索"></p3>
  </form>
@@ -47,7 +47,7 @@
         </tr>
     @endforeach
     </table>
-    
+
  @else
  <p>見つかりませんでした。</p>
  @endif

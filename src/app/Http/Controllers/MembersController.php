@@ -15,4 +15,19 @@ class MembersController extends Controller
         return view('index',['members' => $members]);
 
     }
+
+    public function search(Request $request)
+    {
+        $mimic = $request->input('mimic');
+ 
+        $query = Humor::query();
+ 
+        if (!empty($mimic)) {
+            $query->where('mimic', '>=', $mimic);
+        }
+ 
+        $members = $query->get();
+ 
+        return view('index', compact('members', 'mimic'));
+    }
 }

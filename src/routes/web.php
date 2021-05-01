@@ -16,3 +16,4 @@ use App\Models\Humor;
 
 //top page//
 Route::get('/', 'App\Http\Controllers\MembersController@index')->name('index');
+Route::get('/search', 'App\Http\Controllers\MembersController@search')->name('search');
