@@ -8,8 +8,8 @@
     登録ユーザーのユーモア要素(勝手に代表8項目)を可視化することで、自分好みの面白い人を発見でき、繋がれるwebサイトです。<br>
  </p>
 
- <div class="js-list list-wrapper">
-  <div class="list js-list-content, form-group, text-left"> 
+ 
+  <!-- <div class="form-group, text-left"> 
    <p1><strong>AND検索(入力値"以上")</strong></p1>
    <form action="{{url('/search')}}" method="get" class="text-left">
      <p2>　　ﾓﾉﾏﾈ　: <input type="number" name="mimic" value="mimic" style="width:80px;"> </p2>
@@ -23,8 +23,20 @@
      <p3><input type="submit" value="検索"></p3>
    </form>
    <a href="{{ route('index') }}">検索解除</a>
+  </div> -->
+
+<form>
+  <div class="form-group">
+    <label for="mimic">モノマネ</label>
+    <input type="mimic" class="form-control" id="mimic" style="width:80px;">
   </div>
- </div>
+  <div class="form-group">
+    <label for="maso">自虐</label>
+    <input type="maso" class="form-control" id="maso" style="width:80px;">
+  </div>
+  <button type="submit" class="btn btn-primary">検索</button>
+  <a href="{{ route('index') }}">検索解除</a>
+</form>
 
  @if($members->count())
 
