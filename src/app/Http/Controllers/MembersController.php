@@ -11,7 +11,7 @@ class MembersController extends Controller
 {
     public function show(){
 
-        $members = Member::orderBy('id','asc')->get();
+        $members = Humor::orderBy('id','asc')->get();
         return view('humor_chart',['members' => $members]);
 
         /*$sql= "SELECT id, name, mimic, maso, pathos, updown, black, volume, energy, insane, color FROM members ORDER BY id";
