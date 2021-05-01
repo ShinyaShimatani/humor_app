@@ -55,7 +55,7 @@
             <td>{{$member->volume}}</td>
             <td>{{$member->energy}}</td>
             <td>{{$member->insane}}</td>
-            <td><a href="{{ route('index') }}"></a> ;
+            <td><a href="{{ route('index') }}">★</a> ;
 
         </tr>
     @endforeach
