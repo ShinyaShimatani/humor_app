@@ -12,14 +12,14 @@
  <div class="form-group, text-left"> 
    <p1><strong>AND検索(入力値"以上")</strong></p1>
    <form action="{{url('/search')}}" method="get" class="text-left">
-     <p2>　　ﾓﾉﾏﾈ　: <input type="number" name="mimic" value="mimic" style="width:80px;" class="form-control"> </p2>
-     <p2>　　自虐　: <input type="number" name="maso" value="maso" style="width:80px;" class="form-control"> </p2><br>
-     <p2>　　哀愁　: <input type="number" name="pathos" value="pathos" style="width:80px;" class="form-control"> </p2>
-     <p2>　　緩急　: <input type="number" name="updown" value="updown" style="width:80px;" class="form-control"> </p2><br>
-     <p2>ﾌﾞﾗｯｸｼﾞｮｰｸ: <input type="number" name="black_joking" value="black_joking" style="width:80px;" class="form-control"> </p2>
-     <p2>　　声量　: <input type="number" name="volume" value="volume" style="width:80px;" class="form-control"> </p2><br>
-     <p2>　　熱量　: <input type="number" name="energy" value="energy" style="width:80px;" class="form-control"> </p2>
-     <p2>　　狂気　: <input type="number" name="insane" value="insane" style="width:80px;" class="form-control"> </p2><br>
+     <p2>　　ﾓﾉﾏﾈ　: <input type="number" name="mimic" value="mimic" style="width:80px;"> </p2>
+     <p2>　　自虐　: <input type="number" name="maso" value="maso" style="width:80px;" > </p2><br>
+     <p2>　　哀愁　: <input type="number" name="pathos" value="pathos" style="width:80px;" > </p2>
+     <p2>　　緩急　: <input type="number" name="updown" value="updown" style="width:80px;" > </p2><br>
+     <p2>ﾌﾞﾗｯｸｼﾞｮｰｸ: <input type="number" name="black_joking" value="black_joking" style="width:80px;" > </p2>
+     <p2>　　声量　: <input type="number" name="volume" value="volume" style="width:80px;" > </p2><br>
+     <p2>　　熱量　: <input type="number" name="energy" value="energy" style="width:80px;" > </p2>
+     <p2>　　狂気　: <input type="number" name="insane" value="insane" style="width:80px;" > </p2><br>
      <button type="submit" class="btn btn-primary">検索</button>
    </form>
    <a href="{{ route('index') }}">検索解除</a>
