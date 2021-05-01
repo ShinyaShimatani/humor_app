@@ -8,6 +8,14 @@
     登録ユーザーのユーモア要素(勝手に代表8項目)を可視化することで、自分好みの面白い人を発見でき、繋がれるwebサイトです。<br>
  </p>
 
+ <p1>検索</p1>
+ <form action="{{url('/narrowing_index')}}" method="get">
+     <p2><input type="number" name="mimic" value="{{$mimic}}">以上</p2>
+     <p3><input type="submit" value="検索"></p3>
+ </form>
+
+ @if($members->count())
+
     <!-- table -->
     <table class="table table-striped">
 
@@ -39,5 +47,9 @@
         </tr>
     @endforeach
     </table>
+    
+ @else
+ <p>見つかりませんでした。</p>
+ @endif
 
 @endsection
