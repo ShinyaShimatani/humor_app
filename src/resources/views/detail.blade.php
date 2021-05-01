@@ -4,6 +4,8 @@
  
  <h1>Humor-User-Index</h1>
 
+ <form method="get" action="{{route('index',['id'=>$member->id])}}">
+ 
     <!-- table -->
     <table class="table table-striped">
 
@@ -43,5 +45,7 @@
     @endforeach
     </table>
     <a href="{{ route('index') }}"></a> 
+
+    </form>
 
 @endsection
