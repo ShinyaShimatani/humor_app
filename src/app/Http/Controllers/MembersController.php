@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\DB;
 class MembersController extends Controller
 {
     public function show(){
-        $member = Humor::get();
+        $member = new Humor();
         $member->name = 'Mike';
         $member->mimic = 100;
         $member->maso = 100;
