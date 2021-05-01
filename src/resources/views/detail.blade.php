@@ -22,8 +22,7 @@
         <th>その他</th>
         
 
-    <!-- loop -->
-    @foreach($members as $member)
+    
         <tr>
             <td>{{$member->id}}</td>
             <td>{{$member->name}}</td>
@@ -40,7 +39,7 @@
             <td>{{$member->others}}</td>
       
         </tr>
-    @endforeach
+        
     </table>
     <a href="{{ route('index') }}">戻る</a> 
 
