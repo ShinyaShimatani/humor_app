@@ -19,7 +19,7 @@
     <body class="vh-100 d-flex justify-content-center text-center">
             <div class="w-75 mt-3">
                 <div class="text-black-50 text-left border-bottom mt-5">
-                    ユーモアステータスCHK画面
+                ユーモア図鑑
                 </div>
 
                 <div>
