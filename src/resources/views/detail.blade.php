@@ -4,6 +4,9 @@
  
  <h1>Humor-User-Index</h1>
 
+ <div class="paginate">
+ {{ $members->links() }}
+ </div>
     <!-- table -->
     <table class="table table-striped">
 

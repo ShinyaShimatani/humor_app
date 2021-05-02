@@ -22,9 +22,8 @@
                 ユーモア図鑑
                 </div>
 
-                <div class="paginate">
+                <div>
                  @yield('content')
-                 {{ $members->links() }}
                 </div>
             </div>
         </div>

@@ -27,6 +27,10 @@
 
  @if($members->count())
 
+ <div class="paginate">
+ {{ $members->links() }}
+ </div>
+  
     <!-- table -->
     <table class="table table-striped">
 
