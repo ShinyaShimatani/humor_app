@@ -43,9 +43,9 @@
         </tr>
     @endforeach
     </table>
-   </div>
-   {{ $members->links() }}
+  </div>
+  {{ $members->links() }}
 
-    <a href="{{ route('index') }}">一覧に戻る</a> 
 
+  <a href="{{ route('index') }}">一覧に戻る</a> 
 @endsection
