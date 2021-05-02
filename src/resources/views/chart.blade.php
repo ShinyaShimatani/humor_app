@@ -2,17 +2,10 @@
 
 @section('content')
  
- <h1>Humor-User-Index</h1>
+<h1>Humor-User-Index</h1>
 
- <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>レーダーチャート</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet"><!--　←　触らないBootstrap v4.3.1　-->
-    <script src="js/jquery-3.4.1.min.js"></script><!--　←　触らない　-->
-    <script src="js/bootstrap.min.js"></script><!--　←　触らない　-->
-    <script src="js/Chart.min.js"></script>    
+ <title>レーダーチャート</title>
+   
     <style>
         h1{font-size:1.3rem;}
         .table-font { font-size:0.7rem; }
@@ -20,8 +13,7 @@
         	.sm-non { display:none; }
         } 
     </style>
-</head>
-<body>
+
 <div class="container">	
     <h1 class="text-primary my-3">レーダーチャート </h1>
 	<div class="row">
