@@ -62,7 +62,7 @@
     @endforeach
     </table>
    </div>
-   {{ $memberss->links() }}
+   {{ $members->links() }}
 
  @else
  <p>!!そこまで面白い登録者はいませんでした....!!</p>
