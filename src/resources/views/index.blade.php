@@ -26,11 +26,12 @@
  </div>
 
  @if($members->count())
-  
+    
+   <div class="container">
     <!-- table -->
     <table class="table table-striped">
 
-    　　<th>id</th>
+        <th>id</th>
         <th>名前</th>
         <th>モノマネ</th>
         <th>自虐</th>
@@ -60,6 +61,8 @@
         </tr>
     @endforeach
     </table>
+   </div>
+   {{ $memberss->links() }}
 
  @else
  <p>!!そこまで面白い登録者はいませんでした....!!</p>
