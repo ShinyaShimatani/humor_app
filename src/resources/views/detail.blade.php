@@ -3,7 +3,7 @@
 @section('content')
  
  <h1>Humor-User-Index</h1>
-
+ <h5>SNSで深く知ろう</h5>
  <div class="container">
     <!-- table -->
     <table class="table table-striped">
