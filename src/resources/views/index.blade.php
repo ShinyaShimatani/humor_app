@@ -63,11 +63,7 @@
     </table>
    </div>
    {{ $members->links() }}
-   
-   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>レーダーチャート</title>
     <link href="css/bootstrap.min.css" rel="stylesheet"><!--　←　触らないBootstrap v4.3.1　-->
     <script src="js/jquery-3.4.1.min.js"></script><!--　←　触らない　-->
@@ -80,9 +76,8 @@
         	.sm-non { display:none; }
         } 
     </style>
-   </head>
 
-   <div class="col-md-7">	
+    <div class="col-md-7">	
             <!--以下 グラフ-->
             <canvas id="myChart"></canvas>
             <script>
@@ -115,7 +110,7 @@
             });
             </script>
             <!--以上 グラフ-->
-    </div>
+     </div>
 
  @else
  <p><strong>!!そこまで面白い登録者はいませんでした....!!</strong></p>
