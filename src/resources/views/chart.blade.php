@@ -28,16 +28,7 @@
 	</div>
     <h1 class="text-primary my-3">レーダーチャート </h1>
 	<div class="row">
-		<div class="col-md-5">
-            <form method="POST" anction="<?= $_SERVER['SCRIPT_NAME'] ?>" class="my-3">
-                <select name="shurui" onchange="submit(this.form)">
-                    <option value="radar"<?php if( $shurui=="radar" ){ echo "selected"; } ?>>レーダーチャート</option>
-                    <option value="line"<?php if( $shurui=="line" ){ echo "selected"; } ?>>線グラフ</option>
-                    <option value="bar"<?php if( $shurui=="bar" ){ echo "selected"; } ?>>棒グラフ</option>
-                </select>
-                <input type="submit" value="グラフ種類を変える" class="btn btn-primary">
-            </form>
- 
+		<div class="col-md-5"> 
             <div class="text-sm">※数値100が各栄養素の朝食時の必要量の目安を表しています。</div>
             <div class="text-sm">※ケロッグ様ホームページのグラフを目視で読み取った為、数値に誤差が有ります。<BR>ご容赦ください。</div>
 		</div>
