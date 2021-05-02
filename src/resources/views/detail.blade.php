@@ -4,6 +4,7 @@
  
  <h1>Humor-User-Index</h1>
 
+ <div class="container">
     <!-- table -->
     <table class="table table-striped">
 
@@ -42,6 +43,8 @@
         </tr>
     @endforeach
     </table>
+   </div>
+   {{ $members->links() }}
 
     <a href="{{ route('index') }}">一覧に戻る</a> 
 
