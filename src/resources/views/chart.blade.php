@@ -23,15 +23,8 @@
 </head>
 <body>
 <div class="container">	
-	<div style="">
-		<div style="width:120px;height:auto;"><a href="https://chikaraemon.com/"><img src="logo.jpg"></a></div>
-	</div>
     <h1 class="text-primary my-3">レーダーチャート </h1>
 	<div class="row">
-		<div class="col-md-5"> 
-            <div class="text-sm">※数値100が各栄養素の朝食時の必要量の目安を表しています。</div>
-            <div class="text-sm">※ケロッグ様ホームページのグラフを目視で読み取った為、数値に誤差が有ります。<BR>ご容赦ください。</div>
-		</div>
 		<div class="col-md-7">	
             <!--以下グラフ-->
             <canvas id="myChart"></canvas>
