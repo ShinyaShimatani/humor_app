@@ -10,12 +10,12 @@ use Illuminate\Support\Facades\DB;
 class MembersController extends Controller
 {
     public function index(){
-        $members = Humor::orderBy('id','asc')->paginate(5);
+        $members = Humor::orderBy('id','asc')->simplePaginate(5);
         return view('index',['members' => $members]);
     }
 
     public function detail(){
-        $members = Humor::orderBy('id','asc')->paginate(5);
+        $members = Humor::orderBy('id','asc')->simplePaginate(5);
         return view('detail',['members' => $members]);
     }
 
@@ -57,7 +57,7 @@ class MembersController extends Controller
             $query->where('insane', '>=', $insane);
         }
  
-        $members = $query->paginate(5);
+        $members = $query->simplePaginate(5);
  
         return view('index', 
         compact('members', 'mimic', 'maso', 'pathos', 'updown', 'black_joking', 'volume', 'energy', 'insane'));
