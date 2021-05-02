@@ -42,8 +42,7 @@
         </tr>
     @endforeach
     </table>
-
-    
+    {{ $members->links() }}
 
     <a href="{{ route('index') }}">一覧に戻る</a> 
 
