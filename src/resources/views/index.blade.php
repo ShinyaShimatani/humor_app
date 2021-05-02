@@ -25,6 +25,10 @@
    <a href="{{ route('index') }}">検索解除</a>
  </div>
 
+ <div class="text-center">
+  <button type="{{ route('chart') }}" class="btn btn-primary">チャートへ</button>
+ </div>
+
  @if($members->count())
     
    <div class="container">
@@ -63,54 +67,6 @@
     </table>
    </div>
    {{ $members->links() }}
-
-    <title>レーダーチャート</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet"><!--　←　触らないBootstrap v4.3.1　-->
-    <script src="js/jquery-3.4.1.min.js"></script><!--　←　触らない　-->
-    <script src="js/bootstrap.min.js"></script><!--　←　触らない　-->
-    <script src="js/Chart.min.js"></script>    
-    <style>
-        h1{font-size:1.3rem;}
-        .table-font { font-size:0.7rem; }
-        @media screen and (max-width: 480px) { 
-        	.sm-non { display:none; }
-        } 
-    </style>
-
-    <div class="col-md-7">	
-            <!--以下 グラフ-->
-            <canvas id="myChart"></canvas>
-            <script>
-            var ctx = document.getElementById('myChart').getContext('2d');
-            var myChart = new Chart(ctx, {
-                type: 'radar',
-                data: {
-                    labels: ['モノマネ', '自虐', '哀愁', '緩急', 'ブラックジョーク', '声量', '熱量', '狂気'],
-                    datasets: [{
-                     label: 'Penny',
-                     data: [100,100,100,100,100,100,100,100],
-                     fill: true,
-                     backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                     borderColor: 'rgb(255, 99, 132)',
-                     pointBackgroundColor: 'rgb(255, 99, 132)',
-                     pointBorderColor: '#fff',
-                     pointHoverBackgroundColor: '#fff',
-                     pointHoverBorderColor: 'rgb(255, 99, 132)'
-                    }, {
-                     label: 'Sheldon',
-                     data: [10,10,10,10,10,100,10,10],
-                     fill: true,
-                     backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                     borderColor: 'rgb(54, 162, 235)',
-                     pointBackgroundColor: 'rgb(54, 162, 235)',
-                     pointBorderColor: '#fff',
-                     pointHoverBackgroundColor: '#fff',
-                     pointHoverBorderColor: 'rgb(54, 162, 235)'
-                    }]}
-            });
-            </script>
-            <!--以上 グラフ-->
-     </div>
 
  @else
  <p><strong>!!そこまで面白い登録者はいませんでした....!!</strong></p>

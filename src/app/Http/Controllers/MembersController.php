@@ -19,6 +19,10 @@ class MembersController extends Controller
         return view('detail',['members' => $members]);
     }
 
+    public function chart(){
+        return view('chart');
+    }
+
     public function search(Request $request)
     {
         $mimic = $request->input('mimic');
