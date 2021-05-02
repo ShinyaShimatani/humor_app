@@ -26,8 +26,9 @@
  </div>
 
  <div class="text-center">
-  <button type="{{ route('chart') }}" class="btn btn-primary">チャートへ</button>
+  <a href="{{ route('chart') }}">チャートへGO</a>
  </div>
+ <br>
 
  @if($members->count())
     
