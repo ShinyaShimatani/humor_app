@@ -10,12 +10,12 @@ use Illuminate\Support\Facades\DB;
 class MembersController extends Controller
 {
     public function index(){
-        $members = Humor::orderBy('id','asc')->get()->paginate(5);
+        $members = Humor::orderBy('id','asc')->paginate(5);
         return view('index',['members' => $members]);
     }
 
     public function detail(){
-        $members = Humor::orderBy('id','asc')->get()->paginate(5);
+        $members = Humor::orderBy('id','asc')->paginate(5);
         return view('detail',['members' => $members]);
     }
 
