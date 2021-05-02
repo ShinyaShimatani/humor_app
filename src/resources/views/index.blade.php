@@ -20,9 +20,9 @@
      <p2>　　声量　: <input type="number" name="volume" value="volume" style="width:80px;" > </p2><br>
      <p2>　　熱量　: <input type="number" name="energy" value="energy" style="width:80px;" > </p2>
      <p2>　　狂気　: <input type="number" name="insane" value="insane" style="width:80px;" > </p2><br>
-     <button type="submit" class="btn btn-primary">検索</button>
+     <button type="submit" class="btn btn-primary" class="text-center">検索</button>
    </form>
-   <a href="{{ route('index') }}">検索解除</a>
+   <a href="{{ route('index') }}" class="text-center">検索解除</a>
  </div>
 
  @if($members->count())
