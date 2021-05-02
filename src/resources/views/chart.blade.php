@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>レーダーチャートで見てみよう</title>
+    <title>レーダーチャート</title>
     <link href="css/bootstrap.min.css" rel="stylesheet"><!--　←　触らないBootstrap v4.3.1　-->
     <script src="js/jquery-3.4.1.min.js"></script><!--　←　触らない　-->
     <script src="js/bootstrap.min.js"></script><!--　←　触らない　-->
@@ -21,9 +21,28 @@
         } 
     </style>
 </head>
-
-    <div class="col-md-7">	
-            <!--以下 グラフ-->
+<body>
+<div class="container">	
+	<div style="">
+		<div style="width:120px;height:auto;"><a href="https://chikaraemon.com/"><img src="logo.jpg"></a></div>
+	</div>
+    <h1 class="text-primary my-3">レーダーチャート </h1>
+	<div class="row">
+		<div class="col-md-5">
+            <form method="POST" anction="<?= $_SERVER['SCRIPT_NAME'] ?>" class="my-3">
+                <select name="shurui" onchange="submit(this.form)">
+                    <option value="radar"<?php if( $shurui=="radar" ){ echo "selected"; } ?>>レーダーチャート</option>
+                    <option value="line"<?php if( $shurui=="line" ){ echo "selected"; } ?>>線グラフ</option>
+                    <option value="bar"<?php if( $shurui=="bar" ){ echo "selected"; } ?>>棒グラフ</option>
+                </select>
+                <input type="submit" value="グラフ種類を変える" class="btn btn-primary">
+            </form>
+ 
+            <div class="text-sm">※数値100が各栄養素の朝食時の必要量の目安を表しています。</div>
+            <div class="text-sm">※ケロッグ様ホームページのグラフを目視で読み取った為、数値に誤差が有ります。<BR>ご容赦ください。</div>
+		</div>
+		<div class="col-md-7">	
+            <!--以下グラフ-->
             <canvas id="myChart"></canvas>
             <script>
             var ctx = document.getElementById('myChart').getContext('2d');
@@ -52,9 +71,11 @@
                      pointHoverBackgroundColor: '#fff',
                      pointHoverBorderColor: 'rgb(54, 162, 235)'
                     }]}
-            });
+                }
+            );
             </script>
-            <!--以上 グラフ-->
-     </div>
+            <!--以上グラフ-->
+		</div>
+	</div>
 
 @endsection
