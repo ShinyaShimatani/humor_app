@@ -6,13 +6,7 @@
 
  <title>レーダーチャート</title>
    
-    <style>
-        h1{font-size:1.3rem;}
-        .table-font { font-size:0.7rem; }
-        @media screen and (max-width: 480px) { 
-        	.sm-non { display:none; }
-        } 
-    </style>
+    
 
 <div class="container">	
     <h1 class="text-primary my-3">レーダーチャート </h1>
