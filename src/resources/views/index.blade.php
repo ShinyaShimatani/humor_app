@@ -60,7 +60,6 @@
         </tr>
     @endforeach
     </table>
-    {{ $members->links() }}
 
  @else
  <p>!!そこまで面白い登録者はいませんでした....!!</p>

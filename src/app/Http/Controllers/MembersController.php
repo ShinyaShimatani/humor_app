@@ -57,7 +57,7 @@ class MembersController extends Controller
             $query->where('insane', '>=', $insane);
         }
  
-        $members = $query->get();
+        $members = $query->paginate(5);
  
         return view('index', 
         compact('members', 'mimic', 'maso', 'pathos', 'updown', 'black_joking', 'volume', 'energy', 'insane'));
