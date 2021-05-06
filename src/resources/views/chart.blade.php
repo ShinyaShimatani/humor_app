@@ -70,7 +70,7 @@
                     pointBorderColor: '#fff',
                     pointHoverBackgroundColor: '#fff',
                     pointHoverBorderColor: 'rgb(255, 99, 132)'
-				},
+				},{
                     label: 'Sheldon',
 					data: Sheldon_log,
 					backgroundColor: 'rgba(54, 162, 235, 0.2)',
@@ -79,7 +79,7 @@
                     pointBorderColor: '#fff',
                     pointHoverBackgroundColor: '#fff',
                     pointHoverBorderColor: 'rgb(54, 162, 235)'
-				},
+				},{
                     label: 'Raj',
 					data: Raj_log,
 					backgroundColor: 'rgba(100, 150, 30, 0.2)',
