@@ -62,28 +62,11 @@
 			]
 		},
         options: {
-            responsive: false,
-            title: {                 // タイトル
-                display: true,
-                fontSize: 20,
-                text: "ユーモアレーダーチャート"
-            },
-            legend: {
-                position: 'bottom'   // 凡例の表示位置
-            },
-            scale: {
+             scale: {
                 ticks: {             // 目盛り
                     min: 0,              // 最小値
                     max: 100,            // 最大値
                 },
-                angleLines: {        // 軸（放射軸）
-                    display: true,
-                    color: "purple"
-                },
-                gridLines: {         // 補助線（目盛の線）
-                    display: true,
-                    color: "lime"
-                }
             }
         }
    });
