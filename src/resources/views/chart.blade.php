@@ -2,9 +2,8 @@
 
 @section('content')
  
-<h1>Humor-User-Index</h1>
-
-<h3><strong>ユーモアレーダーチャート</strong></h3>
+<h2>ユーモアレーダーチャート</h2>
+<br>
 
    	<canvas id="myChart"></canvas>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
