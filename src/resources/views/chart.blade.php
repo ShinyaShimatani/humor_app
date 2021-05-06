@@ -4,7 +4,6 @@
  
 <h1>Humor-User-Index</h1>
 
-<h4>ユーモアチャート</h4>
    	<canvas id="myChart"></canvas>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 	<!-- chartを描画 -->
@@ -62,6 +61,38 @@
 
 			]
 		},
+        options: {
+            responsive: false,
+            title: {                 // タイトル
+                display: true,
+                fontSize: 20,
+                text: "ユーモアレーダーチャート"
+            },
+            legend: {
+                position: 'bottom'   // 凡例の表示位置
+            },
+            scale: {
+                pointLabels: {       // 軸のラベル（"国語"など）
+                    fontSize: 16,         // 文字の大きさ
+                    fontColor: "green"    // 文字の色
+                },
+                ticks: {             // 目盛り
+                    min: 0,              // 最小値
+                    max: 100,            // 最大値
+                    stepSize: 20,        // 目盛の間隔
+                    fontSize: 12,        // 目盛り数字の大きさ
+                    fontColor: "purple"  // 目盛り数字の色
+                },
+                angleLines: {        // 軸（放射軸）
+                    display: true,
+                    color: "purple"
+                },
+                gridLines: {         // 補助線（目盛の線）
+                    display: true,
+                    color: "lime"
+                }
+            }
+        }
    });
    </script>
 
