@@ -42,22 +42,22 @@
                     label: 'Sheldon',
 					data: [30,40,50,30,75,75,85,90],
                     fill: true,
-					backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                    borderColor: 'rgb(54, 162, 235)',
-                    pointBackgroundColor: 'rgb(54, 162, 235)',
+					backgroundColor: 'rgba(${r}, ${g}, ${b}, ${a})',
+                    borderColor: 'rgb(${r}, ${g}, ${b})',
+                    pointBackgroundColor: 'rgb(${r}, ${g}, ${b})',
                     pointBorderColor: '#fff', //固定
                     pointHoverBackgroundColor: '#fff', //固定
-                    pointHoverBorderColor: 'rgb(54, 162, 235)'
+                    pointHoverBorderColor: 'rgb(${r}, ${g}, ${b})'
 				},{
                     label: 'Raj',
 					data: [30,40,60,50,60,45,55,65],
                     fill: true,
-					backgroundColor: 'rgba(100, 150, 30, 0.2)',
-                    borderColor: 'rgb(155, 50, 30)',
-                    pointBackgroundColor: 'rgb(150, 99, 65)',
+					backgroundColor: 'rgba(${r}, ${g}, ${b}, ${a})',
+                    borderColor: 'rgb(${r}, ${g}, ${b})',
+                    pointBackgroundColor: 'rgb(${r}, ${g}, ${b})',
                     pointBorderColor: '#fff', //固定
                     pointHoverBackgroundColor: '#fff', //固定
-                    pointHoverBorderColor: 'rgb(155, 132, 90)'
+                    pointHoverBorderColor: 'rgb(${r}, ${g}, ${b})'
 				},
 
 			]
