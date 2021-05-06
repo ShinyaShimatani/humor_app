@@ -4,6 +4,8 @@
  
 <h1>Humor-User-Index</h1>
 
+<h4>ユーモアレーダーチャート</h4>
+
    	<canvas id="myChart"></canvas>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 	<!-- chartを描画 -->
@@ -63,11 +65,15 @@
 		},
         options: {
              scale: {
-                ticks: {             // 目盛り
-                    min: 0,              // 最小値
-                    max: 100,            // 最大値
+                pointLabels: {       // 軸のラベル(ユーモア要素)
+                    fontSize: 24,         // 文字の大きさ
+                    fontColor: "black"    // 文字の色
                 },
-            }
+                ticks: {    // 目盛り
+                    min: 0,   // 最小値
+                    max: 100, // 最大値
+                },
+             }
         }
    });
    </script>
