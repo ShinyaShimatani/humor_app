@@ -20,28 +20,6 @@
         "熱量",
         "狂気",
 	];
-	//チャート2
-	var Sheldon_log = [
-		30.0,	//モノマネのポイント
-		40.0,	//自虐のポイント
-		50.0,	//哀愁のポイント
-		30.0,	//緩急のポイント
-		75.0,	//ブラックジョークのポイント
-		75.0,	//声量のポイント
-        85.0,	//熱量のポイント
-        90.0,	//狂気のポイント
-	];
-	//チャート3
-	var Raj_log = [
-		30.0,	//モノマネのポイント
-		40.0,	//自虐のポイント
-		60.0,	//哀愁のポイント
-		50.0,	//緩急のポイント
-		60.0,	//ブラックジョークのポイント
-		45.0,	//声量のポイント
-        55.0,	//熱量のポイント
-        65.0,	//狂気のポイント
-	];
 
 	//グラフを描画
    var ctx = document.getElementById("myChart");
@@ -62,7 +40,7 @@
                     pointHoverBorderColor: 'rgb(255, 99, 132)'
 				},{
                     label: 'Sheldon',
-					data: Sheldon_log,
+					data: [30,40,50,30,75,75,85,90],
                     fill: true,
 					backgroundColor: 'rgba(54, 162, 235, 0.2)',
                     borderColor: 'rgb(54, 162, 235)',
@@ -72,7 +50,7 @@
                     pointHoverBorderColor: 'rgb(54, 162, 235)'
 				},{
                     label: 'Raj',
-					data: Raj_log,
+					data: [30,40,60,50,60,45,55,65],
                     fill: true,
 					backgroundColor: 'rgba(100, 150, 30, 0.2)',
                     borderColor: 'rgb(155, 50, 30)',
