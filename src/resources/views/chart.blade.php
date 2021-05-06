@@ -10,7 +10,7 @@
 	<!-- chartを描画 -->
    <script>
 	//ユーモアラベル
-	var labels = [
+	labels = [
 		"モノマネ",
 		"自虐",
 		"哀愁",
