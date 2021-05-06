@@ -2,7 +2,8 @@
 
 @section('content')
  
-<h2>レーダーチャート</h2> <h4>=バランスと傾向を見よう=</h4>
+<h2>レーダーチャート</h2>
+<h4>-バランスと傾向を見る-</h4>
 <br>
    	<canvas id="myChart"></canvas>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
@@ -31,12 +32,12 @@
 					label: 'Penny',
 					data: [30,70,30,30,50,70,90,30],
                     fill: true,
-					backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    borderColor: 'rgb(255, 99, 132)',
-                    pointBackgroundColor: 'rgb(255, 99, 132)',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: 'rgb(255, 99, 132)'
+					backgroundColor: 'rgba(${r}, ${g}, ${b}, ${a})',
+                    borderColor: 'rgb(${r}, ${g}, ${b})',
+                    pointBackgroundColor: 'rgb(${r}, ${g}, ${b})',
+                    pointBorderColor: '#fff', //固定
+                    pointHoverBackgroundColor: '#fff', //固定
+                    pointHoverBorderColor: 'rgb(${r}, ${g}, ${b})'
 				},{
                     label: 'Sheldon',
 					data: [30,40,50,30,75,75,85,90],
@@ -44,8 +45,8 @@
 					backgroundColor: 'rgba(54, 162, 235, 0.2)',
                     borderColor: 'rgb(54, 162, 235)',
                     pointBackgroundColor: 'rgb(54, 162, 235)',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
+                    pointBorderColor: '#fff', //固定
+                    pointHoverBackgroundColor: '#fff', //固定
                     pointHoverBorderColor: 'rgb(54, 162, 235)'
 				},{
                     label: 'Raj',
@@ -54,8 +55,8 @@
 					backgroundColor: 'rgba(100, 150, 30, 0.2)',
                     borderColor: 'rgb(155, 50, 30)',
                     pointBackgroundColor: 'rgb(150, 99, 65)',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
+                    pointBorderColor: '#fff', //固定
+                    pointHoverBackgroundColor: '#fff', //固定
                     pointHoverBorderColor: 'rgb(155, 132, 90)'
 				},
 
