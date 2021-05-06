@@ -32,32 +32,62 @@
 					label: 'Penny',
 					data: [30,70,30,30,50,70,90,30],
                     fill: true,
-					backgroundColor: 'rgba(255, 192, 203, 0.2)', 
-                    borderColor: 'rgb(255, 192, 203)', 
-                    pointBackgroundColor: 'rgb(255, 192, 203)', 
+					backgroundColor: 'rgba(205, 92, 92, 0.2)', 
+                    borderColor: 'rgb(205, 92, 92)', 
+                    pointBackgroundColor: 'rgb(205, 92, 92)', 
                     pointBorderColor: '#fff', 
                     pointHoverBackgroundColor: '#fff', 
-                    pointHoverBorderColor: 'rgb(255, 192, 203)' 
+                    pointHoverBorderColor: 'rgb(205, 92, 92)' 
 				},{
                     label: 'Sheldon',
 					data: [30,40,50,30,75,75,85,90],
                     fill: true,
-					backgroundColor: 'rgba(255, 99, 71, 0.2)', 
-                    borderColor: 'rgb(255, 99, 71)',
-                    pointBackgroundColor: 'rgb(255, 99, 71)', 
+					backgroundColor: 'rgba(255, 140, 0, 0.2)', 
+                    borderColor: 'rgb(255, 140, 0)',
+                    pointBackgroundColor: 'rgb(255, 140, 0)', 
                     pointBorderColor: '#fff', 
                     pointHoverBackgroundColor: '#fff', 
-                    pointHoverBorderColor: 'rgb(255, 99, 71)' 
+                    pointHoverBorderColor: 'rgb(255, 140, 0)' 
 				},{
                     label: 'Raj',
 					data: [30,40,60,50,60,45,55,65],
                     fill: true,
-					backgroundColor: 'rgba(255, 165, 0, 0.2)', 
-                    borderColor: 'rgb(255, 165, 0)', 
-                    pointBackgroundColor: 'rgb(255, 165, 0)', 
+					backgroundColor: 'rgba(189, 183, 107, 0.2)', 
+                    borderColor: 'rgb(189, 183, 107)', 
+                    pointBackgroundColor: 'rgb(189, 183, 107)', 
                     pointBorderColor: '#fff', 
                     pointHoverBackgroundColor: '#fff', 
-                    pointHoverBorderColor: 'rgb(255, 165, 0)' 
+                    pointHoverBorderColor: 'rgb(189, 183, 107)' 
+				},{
+                    label: 'Mike',
+					data: [60,30,60,45,90,70,80,85],
+                    fill: true,
+					backgroundColor: 'rgba(50, 205, 50, 0.2)', 
+                    borderColor: 'rgb(50, 205, 50)', 
+                    pointBackgroundColor: 'rgb(50, 205, 50)', 
+                    pointBorderColor: '#fff', 
+                    pointHoverBackgroundColor: '#fff', 
+                    pointHoverBorderColor: 'rgb(50, 205, 50)' 
+				},{
+                    label: 'Dwight',
+					data: [30,30,70,40,95,95,80,90],
+                    fill: true,
+					backgroundColor: 'rgba(218, 112, 214, 0.2)', 
+                    borderColor: 'rgb(218, 112, 214)', 
+                    pointBackgroundColor: 'rgb(218, 112, 214)', 
+                    pointBorderColor: '#fff', 
+                    pointHoverBackgroundColor: '#fff', 
+                    pointHoverBorderColor: 'rgb(218, 112, 214)' 
+				},{
+                    label: 'Jim',
+					data: [50,30,30,50,85,30,40,80],
+                    fill: true,
+					backgroundColor: 'rgba(218, 165, 32, 0.2)', 
+                    borderColor: 'rgb(218, 165, 32)', 
+                    pointBackgroundColor: 'rgb(218, 165, 32)', 
+                    pointBorderColor: '#fff', 
+                    pointHoverBackgroundColor: '#fff', 
+                    pointHoverBorderColor: 'rgb(218, 165, 32)' 
 				},
 
 			]
