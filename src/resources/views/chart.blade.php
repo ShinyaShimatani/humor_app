@@ -32,32 +32,32 @@
 					label: 'Penny',
 					data: [30,70,30,30,50,70,90,30],
                     fill: true,
-					backgroundColor: 'rgba(255, 99, 132, 0.2)', //同色統一
-                    borderColor: 'rgb(255, 99, 132)', //同色統一
-                    pointBackgroundColor: 'rgb(255, 99, 132)', //同色統一
-                    pointBorderColor: '#fff', //固定
-                    pointHoverBackgroundColor: '#fff', //同色統一
-                    pointHoverBorderColor: 'rgb(255, 99, 132)' //同色統一
+					backgroundColor: 'rgba(255, 192, 203, 0.2)', 
+                    borderColor: 'rgb(255, 192, 203)', 
+                    pointBackgroundColor: 'rgb(255, 192, 203)', 
+                    pointBorderColor: '#fff', 
+                    pointHoverBackgroundColor: '#fff', 
+                    pointHoverBorderColor: 'rgb(255, 192, 203)' 
 				},{
                     label: 'Sheldon',
 					data: [30,40,50,30,75,75,85,90],
                     fill: true,
-					backgroundColor: 'rgba(255, 99, 132, 0.2)', //同色統一
-                    borderColor: 'rgb(255, 99, 132)', //同色統一
-                    pointBackgroundColor: 'rgb(255, 99, 132)', //同色統一
-                    pointBorderColor: '#fff', //固定
-                    pointHoverBackgroundColor: '#fff', //固定
-                    pointHoverBorderColor: 'rgb(255, 99, 132)' //同色統一
+					backgroundColor: 'rgba(255, 99, 71, 0.2)', 
+                    borderColor: 'rgb(255, 99, 71)',
+                    pointBackgroundColor: 'rgb(255, 99, 71)', 
+                    pointBorderColor: '#fff', 
+                    pointHoverBackgroundColor: '#fff', 
+                    pointHoverBorderColor: 'rgb(255, 99, 71)' 
 				},{
                     label: 'Raj',
 					data: [30,40,60,50,60,45,55,65],
                     fill: true,
-					backgroundColor: 'rgba(255, 99, 132, 0.2)', //同色統一
-                    borderColor: 'rgb(255, 99, 132)', //同色統一
-                    pointBackgroundColor: 'rgb(255, 99, 132)', //同色統一
-                    pointBorderColor: '#fff', //固定
-                    pointHoverBackgroundColor: '#fff', //固定
-                    pointHoverBorderColor: 'rgb(255, 99, 132)' //同色統一
+					backgroundColor: 'rgba(255, 165, 0, 0.2)', 
+                    borderColor: 'rgb(255, 165, 0)', 
+                    pointBackgroundColor: 'rgb(255, 165, 0)', 
+                    pointBorderColor: '#fff', 
+                    pointHoverBackgroundColor: '#fff', 
+                    pointHoverBorderColor: 'rgb(255, 165, 0)' 
 				},
 
 			]
