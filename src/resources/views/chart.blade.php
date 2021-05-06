@@ -64,6 +64,7 @@
 				{
 					label: 'Penny',
 					data: Penny_log,
+                    fill: true,
 					backgroundColor: 'rgba(255, 99, 132, 0.2)',
                     borderColor: 'rgb(255, 99, 132)',
                     pointBackgroundColor: 'rgb(255, 99, 132)',
@@ -73,6 +74,7 @@
 				},{
                     label: 'Sheldon',
 					data: Sheldon_log,
+                    fill: true,
 					backgroundColor: 'rgba(54, 162, 235, 0.2)',
                     borderColor: 'rgb(54, 162, 235)',
                     pointBackgroundColor: 'rgb(54, 162, 235)',
@@ -82,6 +84,7 @@
 				},{
                     label: 'Raj',
 					data: Raj_log,
+                    fill: true,
 					backgroundColor: 'rgba(100, 150, 30, 0.2)',
                     borderColor: 'rgb(155, 50, 30)',
                     pointBackgroundColor: 'rgb(150, 99, 65)',
