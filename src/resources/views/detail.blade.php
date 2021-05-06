@@ -48,5 +48,5 @@
 
 <br>
 <a href="{{ route('index') }}">一覧に戻る</a> 
-
+<br>
 @endsection
