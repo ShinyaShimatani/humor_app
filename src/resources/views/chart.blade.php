@@ -2,7 +2,8 @@
 
 @section('content')
  
-<h2>レーダーチャートでバランスと傾向を見よう</h2>
+<h2>レーダーチャート</h2>
+<h4>=バランスと傾向を見よう=</h4>
 <br>
 
    	<canvas id="myChart"></canvas>
@@ -76,5 +77,7 @@
         }
    });
    </script>
+
+<a href="{{ route('index') }}">一覧に戻る</a>
 
 @endsection
