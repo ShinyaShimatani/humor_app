@@ -21,7 +21,7 @@
         "狂気",
 	];
 
-	//グラフを描画
+	//チャートを描画
    var ctx = document.getElementById("myChart");
    var myChart = new Chart(ctx, {
 		type: 'radar',
@@ -62,11 +62,6 @@
 
 			]
 		},
-		options: {
-			title: {
-				display: true,
-			}
-		}
    });
    </script>
 
