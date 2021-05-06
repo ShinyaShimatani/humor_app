@@ -95,7 +95,7 @@
         options: {
              scale: {
                 pointLabels: {       // 軸のラベル(ユーモア要素)
-                    fontSize: 18,         // 文字の大きさ
+                    fontSize: 16,         // 文字の大きさ
                     fontColor: "black"    // 文字の色
                 },
                 ticks: {    // 目盛り
