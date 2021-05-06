@@ -2,7 +2,7 @@
 
 @section('content')
  
-<h2>ユーモアレーダーチャート</h2>
+<h2>レーダーチャートでバランスと傾向を見よう</h2>
 <br>
 
    	<canvas id="myChart"></canvas>
