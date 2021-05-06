@@ -4,7 +4,7 @@
  
 <h1>Humor-User-Index</h1>
 
-<h4>ユーモアレーダーチャート</h4>
+<h3><strong>ユーモアレーダーチャート</strong></h3>
 
    	<canvas id="myChart"></canvas>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
@@ -66,7 +66,7 @@
         options: {
              scale: {
                 pointLabels: {       // 軸のラベル(ユーモア要素)
-                    fontSize: 24,         // 文字の大きさ
+                    fontSize: 20,         // 文字の大きさ
                     fontColor: "black"    // 文字の色
                 },
                 ticks: {    // 目盛り
