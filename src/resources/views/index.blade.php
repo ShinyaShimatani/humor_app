@@ -3,7 +3,7 @@
 @section('content')
  
  <h1>Humor-User-Index</h1>
- <h4>=ユーモアポイントは自己申告制。少しだけ奥が深い=</h4>
+ 
  <p>人のおもしろ要素を細分化し、"自分の面白い"に近い人に遭遇できます。<br>
     登録ユーザーのユーモア要素(勝手に代表8項目)を可視化することで、自分好みの面白い人を発見でき、繋がれるwebサイトです。<br>
  </p>
@@ -26,7 +26,7 @@
  </div>
 
  <div class="text-center">
-  <a href="{{ route('chart') }}">チャートへGO</a>
+  <a href="{{ route('chart') }}">チャートへ</a>
  </div>
  <br>
 
