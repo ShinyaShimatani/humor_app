@@ -3,46 +3,55 @@
 @section('content')
  
 <h1>Humor-User-Index</h1>
+
 <h4>ユーモアチャート</h4>
    	<canvas id="myChart"></canvas>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
-	<!-- グラフを描画 -->
+	<!-- chartを描画 -->
    <script>
-	//ラベル
+	//ユーモアラベル
 	var labels = [
-		"2020年1月",
-		"2020年2月",
-		"2020年3月",
-		"2020年4月",
-		"2020年5月",
-		"2020年6月",
+		"モノマネ",
+		"自虐",
+		"哀愁",
+		"緩急",
+		"ブラックジョーク",
+		"声量",
+        "熱量",
+        "狂気",
 	];
-	//平均体重ログ
-	var average_weight_log = [
-		50.0,	//1月のデータ
-		51.0,	//2月のデータ
-		52.0,	//3月のデータ
-		53.0,	//4月のデータ
-		54.0,	//5月のデータ
-		49.0	//6月のデータ
+	//チャート1
+	var Penny_log = [
+		100.0,	//モノマネのポイント
+		100.0,	//自虐のポイント
+		100.0,	//哀愁のポイント
+		100.0,	//緩急のポイント
+		100.0,	//ブラックジョークのポイント
+		100.0,	//声量のポイント
+        100.0,	//熱量のポイント
+        100.0,	//狂気のポイント
 	];
-	//最大体重ログ
-	var max_weight_log = [
-		52.0,	//1月のデータ
-		54.0,	//2月のデータ
-		55.0,	//3月のデータ
-		51.0,	//4月のデータ
-		57.0,	//5月のデータ
-		48.0	//6月のデータ
+	//チャート2
+	var Sheldon_log = [
+		10.0,	//モノマネのポイント
+		10.0,	//自虐のポイント
+		10.0,	//哀愁のポイント
+		10.0,	//緩急のポイント
+		10.0,	//ブラックジョークのポイント
+		100.0,	//声量のポイント
+        10.0,	//熱量のポイント
+        10.0,	//狂気のポイント
 	];
-	//最小体重ログ
-	var min_weight_log = [
-		48.0,	//1月のデータ
-		47.0,	//2月のデータ
-		45.0,	//3月のデータ
-		44.0,	//4月のデータ
-		43.0,	//5月のデータ
-		49.0	//6月のデータ
+	//チャート3
+	var Raj_log = [
+		30.0,	//モノマネのポイント
+		20.0,	//自虐のポイント
+		60.0,	//哀愁のポイント
+		90.0,	//緩急のポイント
+		10.0,	//ブラックジョークのポイント
+		30.0,	//声量のポイント
+        75.0,	//熱量のポイント
+        100.0,	//狂気のポイント
 	];
 
 	//グラフを描画
@@ -53,29 +62,39 @@
 			labels: labels,
 			datasets: [
 				{
-					label: '平均体重',
-					data: average_weight_log,
-					borderColor: "rgba(0,0,255,1)",
-         			backgroundColor: "rgba(0,0,0,0)"
+					label: 'Penny',
+					data: Penny_log,
+					backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    pointBackgroundColor: 'rgb(255, 99, 132)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(255, 99, 132)'
 				},
-				{
-					label: '最大',
-					data: max_weight_log,
-					borderColor: "rgba(0,255,0,1)",
-         			backgroundColor: "rgba(0,0,0,0)"
+                    label: 'Sheldon',
+					data: Sheldon_log,
+					backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgb(54, 162, 235)',
+                    pointBackgroundColor: 'rgb(54, 162, 235)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(54, 162, 235)'
 				},
-				{
-					label: '最小',
-					data: min_weight_log,
-					borderColor: "rgba(255,0,0,1)",
-         			backgroundColor: "rgba(0,0,0,0)"
-				}
+                    label: 'Raj',
+					data: Raj_log,
+					backgroundColor: 'rgba(100, 150, 30, 0.2)',
+                    borderColor: 'rgb(155, 50, 30)',
+                    pointBackgroundColor: 'rgb(150, 99, 65)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(155, 132, 90)'
+				},
+
 			]
 		},
 		options: {
 			title: {
 				display: true,
-				text: '体重ログ（６ヶ月平均）'
 			}
 		}
    });
