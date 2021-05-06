@@ -2,10 +2,8 @@
 
 @section('content')
  
-<h2>レーダーチャート</h2>
-<h4>=バランスと傾向を見よう=</h4>
+<h2>レーダーチャート</h2> <h4>=バランスと傾向を見よう=</h4>
 <br>
-
    	<canvas id="myChart"></canvas>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 	<!-- chartを描画 -->
