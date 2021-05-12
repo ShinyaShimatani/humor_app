@@ -19,3 +19,6 @@ Route::get('/', 'App\Http\Controllers\MembersController@index')->name('index');
 Route::get('/search', 'App\Http\Controllers\MembersController@search')->name('search');
 Route::get('/detail', 'App\Http\Controllers\MembersController@detail')->name('detail');
 Route::get('/chart', 'App\Http\Controllers\MembersController@chart')->name('chart');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
